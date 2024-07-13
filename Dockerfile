@@ -13,5 +13,7 @@ RUN pip install requests
 RUN pip install python-dotenv
 RUN pip install aiohttp
 RUN pip install pytest
+RUN pip install pytest-mock
+RUN pip install pytest-asyncio
 
 CMD ["python", "./app.py"]
