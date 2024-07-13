@@ -43,5 +43,19 @@ To run this application using Docker, follow these steps:
   ```bash
   curl http://127.0.0.1:5000/get_progress?userid=your_userid_here
   ```
+### Libs
 
-  
+**Flask**: Used to build the service API due to its simplicity, flexibility, and suitability for building web APIs in Python.
+
+**requests**: Utilized for making HTTP requests to the Open Weather API to fetch weather data asynchronously.
+
+**python-dotenv**: Used to load environment variables from a .env file, ensuring secure handling of sensitive information like API keys.
+
+**aiohttp**: Chosen for its asynchronous capabilities, facilitating concurrent HTTP requests to handle multiple city IDs within the Open Weather API rate limits.
+
+**pytest**: Employed for testing the application, ensuring functionality and reliability through automated tests.
+
+**pytest-mock**: Used to mock dependencies during testing, enabling isolated unit testing of functions and API interactions.
+
+**pytest-asyncio**: Utilized to test asynchronous code in conjunction with pytest, ensuring that async functions behave correctly under various conditions.
+
